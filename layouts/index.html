@@ -1,2 +1,23 @@
-<h1>HELLO</h1>
-<h6>{{.Date}}</h6>
+{{ define "styles" }}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">        
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/index.css">
+{{end}}
+
+{{ define "scripts" }}
+
+{{end}}
+
+
+    
+
+
+{{ define "main" }}
+    <div id="main" class="container">
+        <div class="row">            
+            <div class="jumbotron">
+                {{ .Content }}
+            </div>
+        </div>            
+    </div>
+{{end}}

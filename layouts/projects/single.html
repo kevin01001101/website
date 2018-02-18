@@ -1,0 +1,12 @@
+{{ define "scripts" }}
+    <script type="text/javascript" src="{{ .Site.BaseURL }}js/meetings.js"></script>
+    <script src="{{ .Site.BaseURL }}js/test.js"></script>
+{{end}}
+
+{{ define "main" }}
+    <h1>layouts Project page</h1>
+    {{.Content}}
+
+    {{ singularize "people" }}
+
+{{end}}
